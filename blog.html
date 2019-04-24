@@ -110,7 +110,7 @@
                 </div>
                 <p></p> 
                 <p>Today I discovered Semantic UI. It’s exactly the type of thing I had been looking for. A nice boot strapped CSS with a simple consistent and clean look and feel to it out of the box. 
-                <p>Importantly it has really good <a href="https://semantic-ui.com/introduction/getting-started.html.">documentation with sample usage</a>. To start off you simply need to include the relevant semantic CSS and JS files into your page. There is some JQuery code you can use as well to bring the css attributes to life via JS to show how to use them. </p>
+                <p>Importantly it has really good <a href="https://semantic-ui.com/introduction/getting-started.html">documentation with sample usage</a>. To start off you simply need to include the relevant semantic CSS and JS files into your page. There is some JQuery code you can use as well to bring the css attributes to life via JS to show how to use them. </p>
                 <p>A 60 min intro tutorial on <a href="ttps://www.youtube.com/watch?v=a9mUH1EWp40">youtube</a></p>
                 <p> To run you’d need to:
                     <div role="list" class="ui bulleted list achievements">
@@ -129,6 +129,75 @@
                     <div class="ui label">Gulp</div>
                 </div>
             </div>
+
+            <div class="ui raised very padded text container segment">
+                <div class="ui two column grid">
+                    <div class="column">
+                        <h2 class="ui header">Visualising Software Architecture</h2>
+                    </div>
+                    <div class="column">
+                        <a class="ui black right ribbon label">Sept 2018</a>
+                    </div>
+                </div>
+                <div  class="ui segment">
+                    <p></p>
+                    <img class="ui medium right floated image" src="./static/images/c4_blog/c4_maps_audience.png">
+                    <p>A few of us attended a course on ‘The Art of Visualising Software Architecture’ which was run by <a href="https://simonbrown.je/">Simon Brown</a>.</p>
+                    <p>The main points we learnt was about visualising the architecture of a system by:</p>
+                    <ul class="ui list">
+                        <li>not trying to fit everything on the one diagram!</li>
+                        <li>use of a consistent style/standard to be used in the diagrams</li>
+                        <li>use different levels to drill into the right amount of detail - a bit like google maps</li>
+                    </ul>
+                    <p> A lot of this is common sense but we don't end up doing it!</p>
+                    <p></p>
+                    <h4> The C4 Model:</h4>
+                    <p>Uses 4 levels</p>
+                    <img class="ui sall image" src="./static/images/c4_blog/c4_model.png">
+                    <p></p>
+                </div>
+                <div class="ui segment"> <p></p>
+                    <p>Good examples of the first 3 levels were in the example Simon provided for one of his old now defunct websites (techtribed.je):</p>
+                    <h4>System context</h4>
+                    <img class="ui big image" src="./static/images/c4_blog/techtribesje-context-diagram.png">
+                    <h4>Containers</h4>
+                    <img class="ui big image" src="./static/images/c4_blog/techtribesje-container-diagram.png">
+                    <h4>Components</h4>
+                    <p> Drill down to one of those containers - Content updater</p>
+                    <img class="ui big image" src="./static/images/c4_blog/techtribesje-component-diagram.png">
+                </div>
+                <div>
+                    <h4>Exercise</h4>
+                    <h5>Before:</h5>
+                    <p>Before we learned how to do it properly we split into groups and made an attempt to come up with diagrams of a system. In our case we focussed on the ADI Builder as part of Messenger.</p>
+                    <div class="ui medium images">
+                        <img class="ui image" src="./static/images/c4_blog/before_ADIGenerator.jpeg">
+                        <img class="ui image" src="./static/images/c4_blog/before_BSSMessenger.jpeg">
+                        <img class="ui image" src="./static/images/c4_blog/before_BSS_System.jpeg">
+                        <img class="ui image" src="./static/images/c4_blog/before_Syndicator.jpeg">
+                    </div>
+                    <h5>After:</h5>
+                    <p>After learning some tips about the C4 model:</p>
+                    <div class="ui medium images">
+                        <img class="ui image" src="./static/images/c4_blog/after_BSS_VOD_Publishing_Context.jpeg">
+                        <img class="ui image" src="./static/images/c4_blog/after_BSSVODContainer.jpeg">
+                        <img class="ui image" src="./static/images/c4_blog/after_MSNG_Component.jpeg">
+                    </div>
+                    <h5>Results/Conclusions:</h5>
+                    <p>The results were much better! We took an action to create C4 diagrams for applications within the department. We ended up with consistent diagrams that everyone could understand and reason about. We then used these diagrams to illustrate proposed architectural changes through projects or rework. It proved useful for example in re-architecting some of the applicaitons to separate & group things more logically</p>
+
+                    <h5>Info & references:</h5>
+                    <ul class="ui list">
+                        <li><a href="./static/images/c4_blog/c4_cliff_notes.pdf">Cliff Notes</a></li>
+                        <li><a href="https://c4model.com/">c4model.com</a></li>
+                        <li>The course content is based on the freely available book - <a href="https://leanpub.com/visualising-software-architecture">leanpub.com/visualising-software-architecture</a></li>
+                    </ul>
+                </div>
+                <div class="extra">
+                    <div class="ui red label">C4</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
