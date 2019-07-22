@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Progression Skills Matrix</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/skills_matrix_main.css">
+  </head>
+  <body>
+
+<header class="skilldescription">
+  <h1>Strategy</h1>
+  <p>As a developer who...strategy, I will...
+<header>
+<table class="skilldescription">
+  <tr>
+    <th>Level</th>
+    <th>Attainment Critera (non-exhaustive)</th>
+  </tr>
+
+  <tr>
+    <td id="0">0 - None</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="1">1 - Appreciate</td>
+    <td><ul><li>Know the company has a strategy</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="2">2 - Understand</td>
+    <td><ul><li>Have a basic understanding of what the company strategy is</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="3">3 - Follow</td>
+    <td><ul><li>Know what the strategy is for the team and department I am working in</li><li>Help the team implement its objectives and goals based on the business strategy</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="4">4 - Practice</td>
+    <td><ul><li>Implement the team strategy in technical decision making</li><li>Contribute to the direction of the department strategy</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="5">5 - Drive/Lead</td>
+    <td><ul><li>Drive the team in developing objectives and goals based on the business strategy for the team and department</li><li>Connect strategic business goals to technology strategy</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="6">6 - Evangelise</td>
+    <td><ul><li>Influence business strategy through innovative use of technology</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="7">7 - Future Thinker</td>
+    <td><ul></ul></td>
+  </tr>
+
+</table>
+<script>
+  var hash = window.location.hash.replace('#','');
+  if (hash) {
+    document.getElementById(hash).parentElement.classList.add('active');
+  }
+</script>
+
+  </body>
+</html>

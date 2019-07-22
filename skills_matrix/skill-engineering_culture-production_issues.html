@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Progression Skills Matrix</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/skills_matrix_main.css">
+  </head>
+  <body>
+
+
+<header class="skilldescription">
+  <h1>Issue Investigation & Resolution</h1>
+  <p>Investigating and getting down to the root cause of issues using monitoring, logging, application insight and other tools.
+<header>
+<table class="skilldescription">
+  <tr>
+    <th>Level</th>
+    <th>Attainment Critera (non-exhaustive)</th>
+  </tr>
+
+  <tr>
+    <td id="0">0 - None</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="1">1 - Appreciate</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="2">2 - Understand</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="3">3 - Follow</td>
+    <td><ul><li>Know where to find the tools for production monitoring and debugging.</li><li>Know where the support systems are.</li><li>Understand the incident management process.</li><li>Understand the deployment process.</li><li>Know how and when a hotfix should be implemented.</li><li>Assist debugging a production issue.</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="4">4 - Practice</td>
+    <td><ul><li>Identify and understand the difference between HPI, MPI and P3 incidents, to appropriately classify and fix the issue.</li><li>Understand the architecture of production systems.</li><li>Understand how a request from a customer gets to your application and the infrastructure it passes through.</li><li>Study analytics data debug and test solution.</li><li>Ability to stop the same issue from happening, identify a root cause.</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="5">5 - Drive/Lead</td>
+    <td><ul><li>Improve the visibility of monitoring, reporting and analytics of production applications and infrastructure.</li><li>Ensuring the correct data is captured to be able to adequately debug issues and propose improvements.</li><li>Identify potential design and infrastructure flaws and drive the fix.</li><li>Investigate and identify new tools to log and monitor issues that aid in debugging.</li><li>Encourage the team to take responsibility for identify and fixing issues.</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="6">6 - Evangelise</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="7">7 - Future Thinker</td>
+    <td><ul></ul></td>
+  </tr>
+
+</table>
+<script>
+  var hash = window.location.hash.replace('#','');
+  if (hash) {
+    document.getElementById(hash).parentElement.classList.add('active');
+  }
+</script>
+
+  </body>
+</html>

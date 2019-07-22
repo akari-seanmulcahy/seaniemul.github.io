@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Progression Skills Matrix</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/skills_matrix_main.css">
+  </head>
+  <body>
+
+
+<header class="skilldescription">
+  <h1>Software Design</h1>
+  <p>Designing systems that conform to the relevant architecture, evolving that architecture to support changing business needs.
+<header>
+<table class="skilldescription">
+  <tr>
+    <th>Level</th>
+    <th>Attainment Critera (non-exhaustive)</th>
+  </tr>
+
+  <tr>
+    <td id="0">0 - None</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="1">1 - Appreciate</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="2">2 - Understand</td>
+    <td><ul><li>[Code] Understands how the code is organised and can find their way around it</li><li>[Systems] Knowledge of the components that form the system being developed, and what is their purpose</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="3">3 - Follow</td>
+    <td><ul><li>[Code] Influences how the code is structured</li><li>[Systems] Able to make changes to the current architecture and introduce new components that fit within it</li><li>[Code/Systems] Understands when the architecture needs to change to meet requirements</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="4">4 - Practice</td>
+    <td><ul><li>[Code] Use previous experience to drive the structure of a new component</li><li>[Systems] Able to design interactions between components in the local estate, considering both business and technical requirements</li><li>[Company] Take local decisions that fit within the broader company architecture, and agree interfaces with the clients</li><li>Able to come up with a phased approach for large-scale changes, and prioritise them based on value</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="5">5 - Drive/Lead</td>
+    <td><ul><li>[Company] Drive changes that affect the broader company architecture</li><li>Understand when sacrifices need to be made to achieve future goals</li><li>Able to construct a longer term plan to move to a better architecture in small pieces of work</li></ul></td>
+  </tr>
+
+  <tr>
+    <td id="6">6 - Evangelise</td>
+    <td><ul></ul></td>
+  </tr>
+
+  <tr>
+    <td id="7">7 - Future Thinker</td>
+    <td><ul></ul></td>
+  </tr>
+
+</table>
+<script>
+  var hash = window.location.hash.replace('#','');
+  if (hash) {
+    document.getElementById(hash).parentElement.classList.add('active');
+  }
+</script>
+
+  </body>
+</html>
