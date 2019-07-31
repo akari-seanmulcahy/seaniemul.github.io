@@ -3,607 +3,146 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="./static/images/favicon.ico">
-    <link rel="stylesheet" href="./static/css/semantic.css">
+    <link rel="shortcut icon" href="./../static/images/favicon.ico">
+    <link rel="stylesheet" href="./../static/css/semantic.css">
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+      });
+
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    })
+  ;
+  </script>
+
+  <style type="text/css">
+
+  body {
+    background-color: #FFFFFF;
+  }
+
+  .overlay {
+    float: left;
+    margin: 0em 3em 1em 0em;
+  }
+  .overlay .menu {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+  }
+
+  .main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .overlay.fixed .menu {
+    left: 800px;
+  }
+
+  .text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+  }
+  .text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+  }
+
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+  </style>
     <title>Seán Mulcahy | Software Engineering Manager</title>
 </head>
 
 <body>
     <div id="root">
         <div class="ui container">
+            
+            <div class="ui sidebar">
+            </div>
 
             <div class="pusher">
                 <div class="ui vertical segment masthead center aligned">
                     <div class="ui text center aligned container">
-                        <h1 class="ui header">Seán Test Page Seán Test Page Seán Test Page Seán Test Page Seán Test Page Seán Test Page<div class="sub header"><span class="italic">Some ramblings</span></div></h1>
+                        <h1 class="ui header">Seán Test Page Seán Test Page Seán Test Page Seán Test Page Seán Test Page Seán Test Page
+                            <div class="sub header"><span class="italic">Some ramblings</span></div></h1>
                     </div>
                 </div>
             </div>
-
-                    <button class="positive ui button" onclick="myFunction()">Positive Button</button>
-
-                    <div class="ui modal">
-                        <!-- OB detailed experience -->
-                        <div class="ui stackable one column grid">
-                            <div class="column">
-                                <div class="ui relaxed items">
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/coral.jpg"></div>
-                                        <div class="content">
-                                            <h2 class="header">Development Manager</h2>
-                                            <div class="meta">Client: Coral</div>
-                                            <div class="meta">February 2014 - May 2015</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Client / Project</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">OpenBet provide front-end websites and back end trading software to Coral for their Sportsbook & Customer account offering.</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Technical responsibility for the Coral account</div>
-                                                    <div role="listitem" class="item">Own key customer relationships with their CTO & Sportsbook Director</div>
-                                                    <div role="listitem" class="item">Involved in technical liaison with various parts of Coral's Business
-                                                        <div role="list" class="ui bulleted list achievements">
-                                                            <div role="listitem" class="item">Coral Business Owners</div>
-                                                            <div role="listitem" class="item">Coral Sportsbook project team</div>
-                                                            <div role="listitem" class="item">Coral Infrastructure</div>
-                                                            <div role="listitem" class="item">Coral Incident/Support team</div>
-                                                            <div role="listitem" class="item">3rd parties</div>
-                                                            <div role="listitem" class="item">Between internal OpenBet teams and the customer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Delivery</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Coral had a very successful Grand National from a system performance point of view with their highest peak bets/minute achieved to date</div>
-                                                    <div role="listitem" class="item">Regular release cycle throughout the year including new functionality, upgrading of OpenBet products and lots of front and back end integrations with various third parties.</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Process Improvements</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Changed the development process from a waterfall to an agile process by introducing sprints for feature development, having a Coral Product Owner embedded in the team and introducing more regular releases.</div>
-                                                    <div role="listitem" class="item">Split the team into distinct functions to allow team to concentrate on priorities from the relevant business owner for that particular business stream – BAU and Production support, Sprint Development, Analysis, Releases. This enabled the team to be more efficient with less context switching between tasks.</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">People</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Managing a team of 40 people across various disciplines split across 3 different sites in London, Athens and Romania:
-                                                        <div role="list" class="ui bulleted list achievements">
-                                                            <div role="listitem" class="item">Developers</div>
-                                                            <div role="listitem" class="item">Testers</div>
-                                                            <div role="listitem" class="item">Analysts</div>
-                                                            <div role="listitem" class="item">Release Team</div>
-                                                        </div>
-                                                    </div>
-                                                    <div role="listitem" class="item">Responsibility for line management and career progression of my direct reports and all team members (including coaching, mentoring, identifying training needs and appraisals)</div>
-                                                    <div role="listitem" class="item">Managing the managers and coaching them in improvements in line management of their reports as well as their delivery tasks</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-         
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/betfair.png"></div>
-                                        <div class="content">
-                                            <h2 class="header">Technical Delivery Manager</h2>
-                                            <div class="meta">Client: Betfair</div>
-                                            <div class="meta">May 2013 - May 2014</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Client / Project</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">To supplement Betfair's own internally built betting exchange, OpenBet provide back-end trading software, APIs that power Betfair's sportsbook website as well as Casino games and back-end games engines to power the Betfair Arcade. </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Delivery</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">New sports functionality added for Cash Out My Bet, Enhanced Odds and Settlement Engine upgrade</div>
-                                                    <div role="listitem" class="item">Launch of Betfair’s Italian Sportsbook</div>
-                                                    <div role="listitem" class="item">Roll out of OpenBet Arcade package upgrades as well as integrations with 3rd party games</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Led two teams for Betfair Sports and Betfair Arcade, totalling 20-25 people split across London, Athens and Romania</div>
-                                                    <div role="listitem" class="item">Expanded & scaled up the team while I was on the account</div>
-                                                    <div role="listitem" class="item">Line management responsibility for all team members</div>
-                                                    <div role="listitem" class="item">Line management and coaching of managers in their responsibilities as a manager</div>
-                                                    <div role="listitem" class="item">Both teams ran a full agile development process</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/rank_group.png"></div>
-                                        <div class="content">
-                                            <h2 class="header">Technical Delivery Manager</h2>
-                                            <div class="meta">Client: Rank/BlueSq</div>
-                                            <div class="meta">Nov 2012 - May 2013</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Client / Project</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">OpenBet provided front-end websites and back end trading software to Rank/BlueSq for their Sportsbook & Customer Account and Casino games offering.</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Led a team of 12 people developing sports and gaming functionality for the Rank account</div>
-                                                    <div role="listitem" class="item">Line management responsibility for all team members</div>
-                                                    <div role="listitem" class="item">Coaching a Senior Developer through to being a technical lead on the team and taking on line management as well as technical responsibilities</div>
-                                                    <div role="listitem" class="item">Delivered regular games package upgrades to add new games to the site</div>
-                                                    <div role="listitem" class="item">Integrated with a new payment provider Safecharge so that Rank could become PCI compliant</div>
-                                                    <div role="listitem" class="item">Upgrading of API’s for account history improvements</div>
-                                                    <div role="listitem" class="item">Oversaw the migration of customers and their data to Betfair after Rank sold their BlueSq Sportsbook customer base to Betfair.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/al_logo.png"></div>
-                                        <div class="content">
-                                            <h2 class="header">Technical Delivery Manager</h2>
-                                            <div class="meta">Clients - Atlantic Lottery, British Columbia Lottery & Lotto Quebec</div>
-                                            <div class="meta">Based out of Montreal, Canada</div>
-                                            <div class="meta">May 2011 - November 2012</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Clients / Project</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">After successfully launching Atlantic Lottery's Sportsbook and retail integration I was given more responsibilities with the two other Canadian Clients - British Columbia Lottery and Lotto Quebec.</div>
-                                                    <div role="listitem" class="item"> As well as supporting Atlantic Lottery BAU I oversaw the project for the launch of a British Columbia Lottery Sportsbook in addition to their existing OpenBet Casino offering as well as the ongoing Casino games rollout for the Lotto Quebec account.</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Accountable for the technical  delivery of a programme of work for the 3 OpenBet Canadian customers – Atlantic Lottery, British Columbia Lottery and Lotto Quebec</div>
-                                                    <div role="listitem" class="item">Oversaw the launch of the British Columbia Lottery sportsbook by our OpenBet team who worked on site in Vancouver.</div>
-                                                    <div role="listitem" class="item">Based in Montreal, Canada, meant regular travel to the customers to both Vancouver and Moncton.</div>
-                                                    <div role="listitem" class="item">Managed 3 separate teams, 2 based in Montreal and one in Vancouver</div>
-                                                    <div role="listitem" class="item">Created an internal open source code base for shared Canadian betting functionality between the Canadian clients to reuse existing functionality</div>
-                                                    <div role="listitem" class="item">Keeping OpenBet management in London up to date on team activities and progress as well as with client issues and opportunities</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="extra">
-                                                <div class="ui red label">NEEDS WORK</div>
-                                            </div>
-                                        </div>
-                                    </div>
-         
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/atlantic_lottery.png"></div>
-                                        <div class="content">
-                                            <h2 class="header">Technical Lead</h2>
-                                            <div class="meta">Client: Atlantic Lottery</div>
-                                            <div class="meta">Based out of New Brunswick and then Montreal, Canada</div>
-                                            <div class="meta">Nov 2009 - April 2011</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Client / Project</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">OpenBet won a new customer in Atlantic Lottery in New Brunswick in Eastern Canada. The project was to setup a new sportsbook website and account system and also an integration with their existing in store retail terminal offering. </div>
-                                                    <div role="listitem" class="item">One of the main requirements was having the team working on site in the client's offices in Canada.</div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Led and owned the development of a new Sports Betting website for a new client to OpenBet. The solution included:
-                                                        <div role="list" class="ui bulleted list achievements">
-                                                            <div role="listitem" class="item">back end trading software</div>
-                                                            <div role="listitem" class="item">front end website</div>
-                                                            <div role="listitem" class="item">integration with Atlantic Lottery’s retail system</div>
-                                                        </div>
-                                                    </div>
-                                                    <div role="listitem" class="item">Involved in project from the start, including response to RFI from London</div>
-                                                    <div role="listitem" class="item">Worked remotely away from the main OpenBet offices in London by being on site in the customer's offices in Moncton New Brunswick, Canada</div>
-                                                    <div role="listitem" class="item">Responsible for the entire project lifecycle from requirements gathering, solution design, development, testing, training and delivery to production.</div>
-                                                    <div role="listitem" class="item">Responsible for setting up the team and line management of the team members</div>
-                                                    <div role="listitem" class="item">Arranged social activities and trips to create a good environment for team members alone in a different country</div>
-                                                    <div role="listitem" class="item">Completed a successful delivery within project time lines to production with post go live warranty support</div>
-                                                    <div role="listitem" class="item">Responsible for senior stakeholder management with the client, including involvement in steering board meetings</div>
-                                                    <div role="listitem" class="item">Dealt with ongoing production support in spite of restrictive government regulations e.g. not having direct access to the production servers or even to the rooms the servers were housed in.</div>
-                                                    <div role="listitem" class="item">Keeping OpenBet management in London up to date in terms of project progress and client activities</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="extra">
-                                                <div class="ui red label">NEEDS WORK</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/sportech.png"></div>
-                                        <div class="content">
-                                            <h2 class="header">Technical Lead</h2>
-                                            <div class="meta">Client: Sportech - The Football Pools</div>
-                                            <div class="meta">January 2008 - December 2009</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Led a development team adding new functionality for the Football Pools Website</div>
-                                                    <div role="listitem" class="item">Putting live of major projects including:
-                                                        <div role="list" class="ui bulleted list achievements">
-                                                            <div role="listitem" class="item">Vernons migration</div>
-                                                            <div role="listitem" class="item">888 integration</div>
-                                                            <div role="listitem" class="item">Website redesign</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Tasks as technical lead included:</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Responsible for the overseeing of the day to day activities for the client Providing Technical Direction, Leadership and Guidance to a team of software developers. Working in collaboration with the Project or Program Manager</div>
-                                                    <div role="listitem" class="item">Ownership of the Technical stages of the software development lifecycle, including requirements capture, writing, testing, and debugging programs.</div>
-                                                    <div role="listitem" class="item">Line management of a team of developers involving:
-                                                        <div role="list" class="ui bulleted list achievements">
-                                                            <div role="listitem" class="item">providing regular feedback on work performance</div>
-                                                            <div role="listitem" class="item">conducting performance reviews</div>
-                                                            <div role="listitem" class="item">assessing technical training needs</div>
-                                                            <div role="listitem" class="item">assisting with recruitment and selection</div>
-                                                            <div role="listitem" class="item">identifying developers for promotion, transfer, and other categories</div>
-                                                        </div>
-                                                    </div>
-                                                    <div role="listitem" class="item">Assisting development staff in developing solutions to software-related problems.</div>
-                                                    <div role="listitem" class="item">In conjunction with other Tech Leads and the CTO, authoring and policing standards and procedures for developers.</div>
-                                                    <div role="listitem" class="item">Assisting in the preparation and review of detailed analyses, plans, diagrams, and verification procedures for proposed solutions.</div>
-                                                    <div role="listitem" class="item">Taking responsibility for the quality of code produced by developers in the team through the execution of regular code reviews</div>
-                                                    <div role="listitem" class="item">The organisation and management of regular developer stand ups to ensure consistent communication across the team</div>
-                                                    <div role="listitem" class="item">Participation in weekly meetings with other Tech Leads to exchange ideas, promoting code reuse, working as a team.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/OB.png"></div>
-                                        <div class="content">
-                                            <h2 class="header">Support Engineer</h2>
-                                            <div class="meta">OpenBet Support Team</div>
-                                            <div class="meta">February 2007 - January 2008</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Triaged and fixed incidents raised by the clients.</div>
-                                                    <div role="listitem" class="item">Good exposure to the code bases and functionality of all our customers.</div>
-                                                    <div role="listitem" class="item">Worked on call to deal with any priority 1 issues raised out of hours</div>
-                                                    <div role="listitem" class="item">Lots of interaction and communication with our customers. In particular during difficult circumstances, to keep them informed of status updates or progress on any serious high priority issues.</div>
-                                                    <div role="listitem" class="item">Dealing with the pressure of having to fix serious high priority production issues on customer web sites when they arise.</div>
-                                                    <div role="listitem" class="item">Ability to multi-task and manage a queue of other lower priority issues across all customers.</div>
-                                                    <div role="listitem" class="item">Co-ordinate the fixes to be released with the development teams</div>
-                                                    <div role="listitem" class="item">Liaise with and react quickly to customers' needs</div>
-                                                    <div role="listitem" class="item">Added to knowledge base documentation to help resolve future similar issues more quickly</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/tote.jpg"></div>
-                                        <div class="content">
-                                            <h2 class="header">Senior Developer</h2>
-                                            <div class="meta">Client: Tote</div>
-                                            <div class="meta">April 2006 - February 2007</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Senior Developer on the team that delivered the new Tote website run on the OpenBet platform, a high profile project for the company at the time.</div>
-                                                     <div role="listitem" class="item">Affiliate Manager - Led the development of a bespoke Affiliate Manager instance for Tote for management of affiliates, their affiliate programmes as well as implementing click throughs and the reporting of conversions for the promotions/offers that were set up.</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Tasks as a senior developer included:</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Supporting the Tech Lead on all emergency issues, customer/product support, Process Initiation Documents (PID) creation/review, general development and testing.</div>
-                                                    <div role="listitem" class="item">Working closely with the Tech Lead in order to develop skills in all aspects of the development process.</div>
-                                                    <div role="listitem" class="item">Able to fully support customer(s) and/or product(s) when the Tech Lead is unavailable.</div>
-                                                    <div role="listitem" class="item">Carrying out code reviews as required by the Tech Lead.</div>
-                                                    <div role="listitem" class="item">Providing ongoing support and mentoring to the development team with the Tech Lead.</div>
-                                                    <div role="listitem" class="item">Carrying out all parts of the release/deployment process, and help with releases where required.</div>
-                                                    <div role="listitem" class="item">Producing viable estimates for all work (PIDs & internal projects).</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/bsq.jpeg"></div>
-                                        <div class="content">
-                                            <h2 class="header">Senior Developer & Developer</h2>
-                                            <div class="meta">Client: BlueSq</div>
-                                            <div class="meta">August 2003 - April 2006</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Worked on a team adding new functionality for Sportsbook and Fixed odds games to the BlueSq website</div>
-                                                    <div role="listitem" class="item">Lead developer on the Sportsbook redesign project ahead of the 2006 world cup</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="item">
-                                        <div class="ui tiny image"><img src="./static/images/stanleybet.jpeg"></div>
-                                        <div class="content">
-                                            <h2 class="header">Developer</h2>
-                                            <div class="meta">Client: StanleyBet</div>
-                                            <div class="meta">April 2003 - August 2003</div>
-
-                                            <div class="description">
-                                                <h3 class="ui header">Achievements / Contributions</h3>
-                                                <div role="list" class="ui bulleted list achievements">
-                                                    <div role="listitem" class="item">Worked on website migration project as the sole developer</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of OB detailed experience -->
-                        <div class="actions">
-                            <div class="ui button">OK</div>
-                        </div>
-                    </div>
-
-
-
-            <div class="ui text container experience">
-                <h2 class="ui center aligned header horizontal header divider aligned">Summarised Experience</h2>
-                <div class="ui top attached tabular fluid five item menu">
-                    <div class="active item" data-tab="first"><div class="ui tiny image"><img src="./static/images/sky-logo-b90e8c9.jpg"></div></div>
-                    <div class="item" data-tab="second"><div class="ui tiny image"><img src="./static/images/OpenBetLogo.png"></div></div>
-                    <div class="item" data-tab="fourth">Being a good engineering manager</div>
-                    <div class="item" data-tab="third"><div class="ui tiny image"><img src="./static/images/sky-logo-b90e8c9.jpg"></div>Detailed</div>
-                    <div class="item" data-tab="fourth"><div class="ui tiny image"><img src="./static/images/OpenBetLogo.png"></div>Detailed</div>
-                </div>
-                <div class="ui bottom attached tab segment active" data-tab="first">
-                </div>
-                <div class="ui bottom attached tab segment" data-tab="second">
-                </div>
-                <div class="ui bottom attached tab segment" data-tab="third">
-                </div>
-                <div class="ui bottom attached tab segment" data-tab="fourth">
-                </div>
-                <div class="ui bottom attached tab segment" data-tab="fifth">
-                </div>
-            </div>
-
             <div class="ui raised very padded text container segment">
-                <h2 class="ui center aligned header horizontal header divider aligned">Experience</h2>
+                <div class="ui right dividing rail">
+                    <div class="ui segment">
+                        Right Rail Content
+
+                            <div class="overlay">
+                              <div class="ui labeled icon vertical menu">
+                                <a class="item"><a href="#anchor1" >Anchor Link</a></a>
+                                <a class="item"><i class="facebook icon"></i> Share</a>
+                                <a class="item"><i class="mail icon"></i> E-mail</a>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+                <h2 class="ui center aligned header horizontal header divider aligned">Heading</h2>
 
                 <div class="ui styled accordion">
                     <div class="title">
                         <i class="dropdown icon"></i>
-                        <div class="ui tiny image"><img src="./static/images/sky-logo-b90e8c9.jpg"></div>
+                        blah 1
                     </div>
                     <div class="content">
-                        <h2 class="header">Software Engineering Manager @ Sky</h2>
-                        <div class="meta">May 2015 - current</div>
-                        <div class="description">
-
-                            <p>I was originally brought into the department I joined Sky with, to help establish a good culture and develop good engineering practices through Agile ways of working. This was done by leading by example and embedding some of the good engineering practices I learned at OpenBet, taking line management and career progression of employees seriously and changing the mind-set of the department to be focussed on building the software for the long term through ownership and by placing a priority in non-functional requirements like supportability, performance etc. and not just short term project deadlines.</p>
-
-                            <h3 class="ui header">Achievements / Contributions</h3>
-                            <div role="list" class="ui bulleted list achievements">
-                                <div role="listitem" class="item">Helped introduce a new culture and more agile way of working into one of the departments, through a long-term transformation initiative. The department had a more waterfall project driven approach before that. This was followed up by a continuous improvements workgroup.</div>
-                                <div role="listitem" class="item">Took over a project midway through with a team of 40+ people working on it and helped get it delivered successful while also getting the team into a mind-set of building the software for the long term through ownership and supportability rather than just meeting project driven deadlines without consideration of non-functional requirements like they were doing previously under the leadership of a Project Manager with no engineering background.</div>
-                                <div role="listitem" class="item">Line managed as well as coached other managers in the department as well as individuals within my own team</div>
-                                <div role="listitem" class="item">Re-motivated a Gonzales team on taking it over to be productive and happy while delivering important projects and functionality to 4 different production systems including launches in Italy, Germany and Spain.</div>
-                                <div role="listitem" class="item">New team created from scratch that successfully delivered new MAP (Master Acquisition Portal) functionality for the CSC (Content Supply Chain) project.</div>
-                                <div role="listitem" class="item">Organised department hack days and team socials</div>
-                                <div role="listitem" class="item">Sky Agile community - attended Agile community meet ups and brown bags</div>
-                                <div role="listitem" class="item">Contributed to the growth of the departments and engineers at Sky by carrying out recruitment - filtering of CVs, telephone and face 2 face interviews for Senior Developers, Analysts and Development Manager</div>
-                                <div role="listitem" class="item">Managed team budgets and finances</div>
-                                <div role="listitem" class="item">Contributed to the creation and introduction of a new more formal career progression path for developers across all of Sky through the job families work group by:
-                                    <ol>
-                                        <li>Creating a new Software Engineer's Career Matrix at Sky</li>
-                                        <li>Attending promotion panels for developers in other departments to adhere to the new matrix for promotion evaluation</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="extra">
-                            <h3 class="ui header">Technologies</h3>
-                            <div class="ui red label">Java</div>
-                            <div class="ui red label">Docker</div>
-                            <div class="ui red label">Rancher</div>
-                            <div class="ui red label">Kubernetes</div>
-                            <div class="ui red label">Jenkins</div>
-                            <div class="ui red label">ActiveMQ</div>
-                            <div class="ui red label">MySQL</div>
-                            <div class="ui red label">Agile</div>
-                            <div class="ui blue label">Monitoring and alerting</div>
-                            <div class="ui blue label">Line Managment</div>
-                            <div class="ui blue label">Career Progression</div>
-                            <div class="ui blue label">CI/CD</div>
-                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                     </div>
 
                     <div class="title">
                         <i class="dropdown icon"></i>
-                        <div class="ui tiny image"><img src="./static/images/OpenBetLogo.png"></div>
+                        blah2
                     </div>
                     <div class="content">
-                        <h2 class="header">Software Engineering Manager @ OpenBet</h2>
-                        <div class="meta">March 2003 - May 2015</div>
-                        <div class="description">
-                            <h3 class="ui header">Achievements / Contributions</h3>
-                            <div role="list" class="ui bulleted list achievements">
-                                <div role="listitem" class="item">As Technical Lead, I led a successful delivery and launch of a new Sports Betting website, back-end trading software and retail integration for a new OpenBet Customer in Canada, Atlantic Lottery, all while working with the client from their offices in New Brunswick.  I was involved in the project from the start and responsible for the entire project lifecycle from requirements gathering, solution design, development, testing, training and delivery to production.</div>
-                                <div role="listitem" class="item">As Development Manager, I led a large team and was technically responsible for the Coral Account of up to 40 people distributed in 3 teams across London, Romania and Athens.  As well as delivering new functionality through the year a part of a regular release cycle, Coral had a very successful Grand National from a system performance point of view with their highest peak bets/minute achieved to that point.</div>
-                                <div role="listitem" class="item">At OpenBet I have been involved in and have experience in all stages of the software development life cycle - RFP responses, requirements gathering, analysis, solution design, development, testing, releases, production support, performance monitoring and improvements. Engineers are involved in all these activities and not just restricted to development and engineering managers are responsible for all of these phases for their team/client account.</div>
-                                <div role="listitem" class="item">On the Coral account I helped transition the team from a waterfall methodology to a more Agile way of working by introducing Scrum, having a Coral Product Owner embedded in the team, introducing more regular releases and helped the team become more efficient by having less context switching by splitting the team into distinct functions to allow team to concentrate on priorities from the relevant business owner for that particular business stream – BAU & Production Support, Sprint Feature Development, Analysis, Releases</div>
-                                <div role="listitem" class="item">I developed and built up working relationships with all the clients whose teams I worked on. This was particularly important as a Technical Lead/Development manager where as the technical point of contact for OpenBet for the account there was lots of stakeholder management with senior stakeholders from the client like CTOs, Sportsbook Directors, Senior Project Managers, Steering Boards etc. This was done by being honest, creating good communication lines and building trust with a proven track record of delivering for them over time.</div>
-                                <div role="listitem" class="item">While line managing people in lots of different engineering roles (Developers, Analysts, Testers, Technical Leads, Scrum Masters) through coaching and mentoring, I have helped with their career progression to roles such as Senior Developer, Technical Lead and Development Manager.</div>
-                                <div role="listitem" class="item">Through roles such as Senior Developer, Technical Lead and Development Manager I had technical responsibility for the accounts, which meant taking responsibility for the quality of software being produced, assisting development staff in developing solutions to software-related problems, execution of regular code reviews to ensure the production system was performant, resilient, PCI compliant and scalable to meet demand. This involved collaborating and working closely with client teams and 3rd parties (PMs, Architects, Analysts, Test Leads, Release Managers) in arriving at and building solutions to meet their needs and requirements while still adhering to OpenBet's high technical standards.</div>
-                                <div role="listitem" class="item">Collaborated with other OpenBet Technical leads, Development managers, the CTO and Commercial Account Directors in applying OpenBet company strategy and objectives (commercially and technically) to the team and client account I was managing. From authoring and policing technical standards, promoting code reuse, exchanging ideas and to planning the roll out of new strategic OpenBet products for the commercial success of the account.</div>
-                                <div role="listitem" class="item">Worked on the OpenBet support team for 6 months, supporting all clients live production systems as the first line of support including out of hours. This high pressure environment was a great learning experience with exposure to all the client code bases and different type of client accounts (small and large). It helped focus on what needs doing when building software solutions from a non-functional point of view for resiliency and performance.</div>
-                                <div role="listitem" class="item">As a full stack Senior Developer I was involved multiple website redesigns. I was lead developer for the BlueSq Sportsbook redesign ahead of the 2006 world cup. I was Technical Lead for Sportech for their football pools website redesign and on Totesport I was Senior Developer on the team that delivered the new Tote website, all high profile project launches for the company and the clients at the time.</div>
-                            </div>
-                        </div>
-                        <div class="extra">
-                            <h3 class="ui header">Technologies</h3>
-                            <div class="ui red label">TCL</div>
-                            <div class="ui red label">CVS</div>
-                            <div class="ui red label">Apache</div>
-                            <div class="ui red label">IBM Informix DB</div>
-                            <div class="ui red label">Unix</div>
-                            <div class="ui red label">HTML</div>
-                            <div class="ui red label">CSS</div>
-                            <div class="ui red label">JS</div>
-                            <div class="ui red label">C</div>
-                            <div class="ui red label">Java</div>
-                            <div class="ui blue label">Full SDLC</div>
-                            <div class="ui blue label">Performant software</div>
-                            <div class="ui blue label">APIs</div>
-                            <div class="ui blue label">Data Feeds</div>
-                            <div class="ui blue label">PCI compliant software</div>
-                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="ui text container experience">
-                <h2 class="ui center aligned header horizontal header divider aligned">Summarised Experience</h2>
-                <div class="ui top attached tabular fluid two item menu">
-                    <div class="active item" data-tab="first"><div class="ui tiny image"><img src="./static/images/sky-logo-b90e8c9.jpg"></div></div>
-                    <div class="item" data-tab="second"><div class="ui tiny image"><img src="./static/images/OpenBetLogo.png"></div></div>
-                </div>
-                <div class="ui bottom attached tab segment active" data-tab="first">
-
-                    <h2 class="header">Software Engineering Manager</h2>
-                    <div class="meta">May 2015 - current</div>
-                    <div class="description">
-
-                        <p>I was originally brought into the department I joined Sky with, to help establish a good culture and develop good engineering practices through Agile ways of working. This was done by leading by example and embedding some of the good engineering practices I learned at OpenBet, taking line management and career progression of employees seriously and changing the mind-set of the department to be focussed on building the software for the long term through ownership and by placing a priority in non-functional requirements like supportability, performance etc. and not just short term project deadlines.</p>
-
-                        <h3 class="ui header">Achievements / Contributions</h3>
-                        <div role="list" class="ui bulleted list achievements">
-                            <div role="listitem" class="item">Helped introduce a new culture and more agile way of working into one of the departments, through a long-term transformation initiative. The department had a more waterfall project driven approach before that. This was followed up by a continuous improvements workgroup.</div>
-                            <div role="listitem" class="item">Took over a project midway through with a team of 40+ people working on it and helped get it delivered successful while also getting the team into a mind-set of building the software for the long term through ownership and supportability rather than just meeting project driven deadlines without consideration of non-functional requirements like they were doing previously under the leadership of a Project Manager with no engineering background.</div>
-                            <div role="listitem" class="item">Line managed as well as coached other managers in the department as well as individuals within my own team</div>
-                            <div role="listitem" class="item">Re-motivated a Gonzales team on taking it over to be productive and happy while delivering important projects and functionality to 4 different production systems including launches in Italy, Germany and Spain.</div>
-                            <div role="listitem" class="item">New team created from scratch that successfully delivered new MAP (Master Acquisition Portal) functionality for the CSC (Content Supply Chain) project.</div>
-                            <div role="listitem" class="item">Organised department hack days and team socials</div>
-                            <div role="listitem" class="item">Sky Agile community - attended Agile community meet ups and brown bags</div>
-                            <div role="listitem" class="item">Contributed to the growth of the departments and engineers at Sky by carrying out recruitment - filtering of CVs, telephone and face 2 face interviews for Senior Developers, Analysts and Development Manager</div>
-                            <div role="listitem" class="item">Managed team budgets and finances</div>
-                            <div role="listitem" class="item">Contributed to the creation and introduction of a new more formal career progression path for developers across all of Sky through the job families work group by:
-                                <ol>
-                                    <li>Creating a new Software Engineer's Career Matrix at Sky</li>
-                                    <li>Attending promotion panels for developers in other departments to adhere to the new matrix for promotion evaluation</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="extra">
-                        <h3 class="ui header">Technologies</h3>
-                        <div class="ui red label">Java</div>
-                        <div class="ui red label">Docker</div>
-                        <div class="ui red label">Rancher</div>
-                        <div class="ui red label">Kubernetes</div>
-                        <div class="ui red label">Jenkins</div>
-                        <div class="ui red label">ActiveMQ</div>
-                        <div class="ui red label">MySQL</div>
-                        <div class="ui red label">Agile</div>
-                        <div class="ui blue label">Monitoring and alerting</div>
-                        <div class="ui blue label">Line Managment</div>
-                        <div class="ui blue label">Career Progression</div>
-                        <div class="ui blue label">CI/CD</div>
-                    </div>
-
+                <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                 </div>
 
-                <div class="ui bottom attached tab segment" data-tab="second">
-
-                    <h2 class="header">Software Engineering Manager</h2>
-                    <div class="meta">March 2003 - May 2015</div>
-                    <div class="description">
-                        <h3 class="ui header">Achievements / Contributions</h3>
-                        <div role="list" class="ui bulleted list achievements">
-                            <div role="listitem" class="item">As Technical Lead, I led a successful delivery and launch of a new Sports Betting website, back-end trading software and retail integration for a new OpenBet Customer in Canada, Atlantic Lottery, all while working with the client from their offices in New Brunswick.  I was involved in the project from the start and responsible for the entire project lifecycle from requirements gathering, solution design, development, testing, training and delivery to production.</div>
-                            <div role="listitem" class="item">As Development Manager, I led a large team and was technically responsible for the Coral Account of up to 40 people distributed in 3 teams across London, Romania and Athens.  As well as delivering new functionality through the year a part of a regular release cycle, Coral had a very successful Grand National from a system performance point of view with their highest peak bets/minute achieved to that point.</div>
-                            <div role="listitem" class="item">At OpenBet I have been involved in and have experience in all stages of the software development life cycle - RFP responses, requirements gathering, analysis, solution design, development, testing, releases, production support, performance monitoring and improvements. Engineers are involved in all these activities and not just restricted to development and engineering managers are responsible for all of these phases for their team/client account.</div>
-                            <div role="listitem" class="item">On the Coral account I helped transition the team from a waterfall methodology to a more Agile way of working by introducing Scrum, having a Coral Product Owner embedded in the team, introducing more regular releases and helped the team become more efficient by having less context switching by splitting the team into distinct functions to allow team to concentrate on priorities from the relevant business owner for that particular business stream – BAU & Production Support, Sprint Feature Development, Analysis, Releases</div>
-                            <div role="listitem" class="item">I developed and built up working relationships with all the clients whose teams I worked on. This was particularly important as a Technical Lead/Development manager where as the technical point of contact for OpenBet for the account there was lots of stakeholder management with senior stakeholders from the client like CTOs, Sportsbook Directors, Senior Project Managers, Steering Boards etc. This was done by being honest, creating good communication lines and building trust with a proven track record of delivering for them over time.</div>
-                            <div role="listitem" class="item">While line managing people in lots of different engineering roles (Developers, Analysts, Testers, Technical Leads, Scrum Masters) through coaching and mentoring, I have helped with their career progression to roles such as Senior Developer, Technical Lead and Development Manager.</div>
-                            <div role="listitem" class="item">Through roles such as Senior Developer, Technical Lead and Development Manager I had technical responsibility for the accounts, which meant taking responsibility for the quality of software being produced, assisting development staff in developing solutions to software-related problems, execution of regular code reviews to ensure the production system was performant, resilient, PCI compliant and scalable to meet demand. This involved collaborating and working closely with client teams and 3rd parties (PMs, Architects, Analysts, Test Leads, Release Managers) in arriving at and building solutions to meet their needs and requirements while still adhering to OpenBet's high technical standards.</div>
-                            <div role="listitem" class="item">Collaborated with other OpenBet Technical leads, Development managers, the CTO and Commercial Account Directors in applying OpenBet company strategy and objectives (commercially and technically) to the team and client account I was managing. From authoring and policing technical standards, promoting code reuse, exchanging ideas and to planning the roll out of new strategic OpenBet products for the commercial success of the account.</div>
-                            <div role="listitem" class="item">Worked on the OpenBet support team for 6 months, supporting all clients live production systems as the first line of support including out of hours. This high pressure environment was a great learning experience with exposure to all the client code bases and different type of client accounts (small and large). It helped focus on what needs doing when building software solutions from a non-functional point of view for resiliency and performance.</div>
-                            <div role="listitem" class="item">As a full stack Senior Developer I was involved multiple website redesigns. I was lead developer for the BlueSq Sportsbook redesign ahead of the 2006 world cup. I was Technical Lead for Sportech for their football pools website redesign and on Totesport I was Senior Developer on the team that delivered the new Tote website, all high profile project launches for the company and the clients at the time.</div>
-                        </div>
-                    </div>
-                    <div class="extra">
-                        <h3 class="ui header">Technologies</h3>
-                        <div class="ui red label">TCL</div>
-                        <div class="ui red label">CVS</div>
-                        <div class="ui red label">Apache</div>
-                        <div class="ui red label">IBM Informix DB</div>
-                        <div class="ui red label">Unix</div>
-                        <div class="ui red label">HTML</div>
-                        <div class="ui red label">CSS</div>
-                        <div class="ui red label">JS</div>
-                        <div class="ui red label">C</div>
-                        <div class="ui red label">Java</div>
-                        <div class="ui blue label">Full SDLC</div>
-                        <div class="ui blue label">Performant software</div>
-                        <div class="ui blue label">APIs</div>
-                        <div class="ui blue label">Data Feeds</div>
-                        <div class="ui blue label">PCI compliant software</div>
-                    </div>
+                <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                 </div>
+                <h5><a id="anchor1"></a>Example anchor</h5>
             </div>
         </div>
     </div>
+
 
 
     <script type="text/javascript">
