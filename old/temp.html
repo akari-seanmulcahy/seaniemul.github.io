@@ -10,71 +10,15 @@
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <script>
-  $(document)
-    .ready(function() {
 
-      // fix main menu to page on passing
-      $('.main.menu').visibility({
-        type: 'fixed'
-      });
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 80
-      });
+    <style type="text/css">
+        
+        .overlay {
+            float: left;
+            margin: 0em 1em 1em 0em;
+        }
+    </style>
 
-      // lazy load images
-      $('.image').visibility({
-        type: 'image',
-        transition: 'vertical flip in',
-        duration: 500
-      });
-
-      // show dropdown on hover
-      $('.main.menu  .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-    })
-  ;
-  </script>
-
-  <style type="text/css">
-
-  body {
-    background-color: #FFFFFF;
-  }
-
-  .overlay {
-    float: left;
-    margin: 0em 3em 1em 0em;
-  }
-  .overlay .menu {
-    position: relative;
-    left: 0;
-    transition: left 0.5s ease;
-  }
-
-  .main.menu.fixed {
-    background-color: #FFFFFF;
-    border: 1px solid #DDD;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-  }
-  .overlay.fixed .menu {
-    left: 800px;
-  }
-
-  .text.container .left.floated.image {
-    margin: 2em 2em 2em -4em;
-  }
-  .text.container .right.floated.image {
-    margin: 2em -4em 2em 2em;
-  }
-
-  .ui.footer.segment {
-    margin: 5em 0em 0em;
-    padding: 5em 0em;
-  }
-  </style>
     <title>Seán Mulcahy | Software Engineering Manager</title>
 </head>
 
@@ -94,17 +38,13 @@
                 </div>
             </div>
             <div class="ui raised very padded text container segment">
-                <div class="ui right dividing rail">
-                    <div class="ui segment">
-                        Right Rail Content
-
-                            <div class="overlay">
-                              <div class="ui labeled icon vertical menu">
-                                <a class="item"><a href="#anchor1" >Anchor Link</a></a>
-                                <a class="item"><i class="facebook icon"></i> Share</a>
-                                <a class="item"><i class="mail icon"></i> E-mail</a>
-                              </div>
-                            </div>
+                <div class="ui right rail">
+                    <div class="overlay">
+                        <div class="ui labeled icon vertical menu">
+                            <a class="item"><a href="#anchor1" >Anchor Link</a></a>
+                            <a class="item" href="#anchor1" >Share</a>
+                            <a class="item"><i class="mail icon"></i> E-mail</a>
+                        </div>
                     </div>
                 </div>
                 <h2 class="ui center aligned header horizontal header divider aligned">Heading</h2>
@@ -161,6 +101,20 @@
                 .modal('show')
             ;
         };
+
+
+        $(document)
+        .ready(function() {
+
+          // fix right hand menu to page on passing
+          $('.overlay').visibility({
+            type: 'fixed',
+            offset: 80
+          });
+
+
+        })
+        ;
     </script>
 </body>
 
