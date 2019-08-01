@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="./static/images/favicon.ico">
     <link rel="stylesheet" href="./static/css/semantic.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <title>Seán Mulcahy | Software Engineering Manager</title>
 </head>
 
@@ -39,10 +44,20 @@
 
             <div class="ui raised very padded text container segment">
 
+                <div class="ui right rail">
+                    <div class="overlay">
+                        <div class="ui labeled icon vertical menu">
+                            <a class="item" href="#managin">Managin' ain't easy!</a>
+                            <a class="item" href="#turning">Turning a team around</a>
+                            <a class="item" href="#visualising">Visualising Software Architecture</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="ui grid">
                     <div class="fourteen wide column">
                         <!-- <h2 class="ui header">Being a manager isn't easy!</h2> -->
-                        <h2 class="ui header">Managin' ain't easy!</h2>
+                        <h2 class="ui header"><a id="managin"></a>Managin' ain't easy!</h2>
                     </div>
                     <div class="two wide column">
                         <a class="ui right ribbon label">May 2019</a>
@@ -117,6 +132,7 @@
                     <div class="ui label">Line Management</div>
                 </div>
             </div>
+
 <!--
 
             <div class="ui raised very padded text container segment">
@@ -130,7 +146,7 @@
             <div class="ui raised very padded text container segment">
                 <div class="ui two column grid">
                     <div class="column">
-                        <h2 class="ui header">Turning a team around</h2>
+                        <h2 class="ui header"><a id="turning"></a>Turning a team around</h2>
                     </div>
                     <div class="column">
                         <a class="ui right ribbon label">May 2019</a>
@@ -247,7 +263,7 @@
 
                 <div class="ui grid">
                     <div class="fourteen wide column">
-                        <h2 class="ui header">Visualising Software Architecture</h2>
+                        <h2 class="ui header"><a id="visualising"></a>Visualising Software Architecture</h2>
                     </div>
                     <div class="two wide column">
                         <a class="ui black right ribbon label">Sept 2018</a>
@@ -340,6 +356,18 @@
 
         </div>
     </div>
+    <script type="text/javascript">
+
+        $(document)
+        .ready(function() {
+            // fix right hand menu to page on passing
+            $('.overlay').visibility({
+                type: 'fixed',
+                offset: 80
+            });
+        })
+        ;
+    </script>
 </body>
 
 </html>
