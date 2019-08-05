@@ -39,66 +39,6 @@
                 </div>
             </div>  
 
-
-            <div class="ui raised very padded text container segment">
-                <div class="ui two column grid">
-                    <div class="column">
-                        <h2 class="ui header">Becoming Stale Technology-wise</h2>
-                    </div>
-                    <div class="column">
-                        <a class="ui purple right ribbon label">April 24th 2019</a>
-                    </div>
-                </div>
-                <p></p>
-                <p> My first job was as a developer at a great company - OpenBet. We were full stack developers doing devops as well as coding, this was before devops and full stack became the norm. We were a small company with the primary language being TCL. Beacuse it was such a nice language not many people from the industry had it. Most of the employees started from university and trained up in it. The hiring policy was to hire very clever people who were problem solvers rather than focussing on experience in a particular language.</p>
-                <p> This meant we ended up with a very smart workforce who picked up TCL quite easily along with SQL and front end HTML, CSS and JS. We built extremely performant websites built to handle peak loads of over 10000 bets per min on our client's busiest day of the year - Grand National day.
-                </p>
-
-                <p>Here is a view of the OpenBet products and applications: <img class="ui fluid image" src="./../static/images/blog/openbet/OpenBetProducts.png">
-                </p>
-                <p></p>
-                <p>And a view of the architecture & http request/response flow: <img class="ui fluid image" src="./../static/images/blog/openbet/ob_arch.png"></p>
-                <p></p>
-
-                <p></p>
-                <p> So, as you can see OpenBet did some pretty cool stuff and was the dominant player in the industry for creating sportsbooks. But a big drawback was the company stuck with the same tools it always used and very rarely adopted some new technologies being used. </p>   
-                <p>We kept reinventing the wheel when we could have used off the shelf open source products that had already been built and had solved the common problems and already overcome all the teething issues that arose with building something from scratch. Some examples would be:
-                </p>
-                <div role="list" class="ui bulleted list achievements">
-                    <div role="listitem" class="item">Caching data layer (called SiteServer) rather than using something like memcahced</div>
-                    <div role="listitem" class="item">Adopting CI/CD</div>
-                    <div role="listitem" class="item">Focusing on simple front end development and keeping developing for mobile high on the agenda</div>
-                    <div role="listitem" class="item">Having key products as a service rather than bespoke development for every customer</div>
-                </div>
-                <p> These are just some of the examples. It led to the company losing its ground as the market leader and projects taking longer to develop than they could have. But for the developers in the company it meant that nothing new from a technology standpoint was learned.  Because we were a ‘Time & Materials’ company we didn’t get given the time for experimentation/learning/R&D and had to focus on billable hours. People got bored of doing the same thing over and over. Some people left, some people move into more managerial positions (like me). But on the whole people did not progress their breadth of technology tools while there. Having moved to Sky where there is much more diverse 
-                </p>
-                <p>One big improvement we could have made was around CI/CD, automated tests and automated releases including DB scripts. The process at OpenBet was very manual and knowing what the industry has as standard for CI/CD now and applying it to OpenBet would add so much value to the entire process, added more consistency and resiliency, reduced cost for the clients and allowed the team to concentrate on more interesting work. </p>
-
-            </div>
-
-
-
-
-            <div class="ui raised very padded text container segment">
-                <div class="ui two column grid">
-                    <div class="column">
-                        <h2 class="ui header">OpenBet</h2>
-                    </div>
-                    <div class="column">
-                        <a class="ui purple right ribbon label">April 24th 2019</a>
-                    </div>
-                </div>
-                <p></p>
-                <p>OpenBet products and applications</p>
-                <img class="ui fluid image" src="./../static/images/blog/openbet/OpenBetProducts.png">
-                <p></p>
-                <p>OpenBet architecture & http request/response flow</p>
-                <img class="ui fluid image" src="./../static/images/blog/openbet/ob_arch.png">
-                <p></p>
-                <p> One big improvement we could have made was around CI/CD, automated tests and automated releases including DB scripts. The process at OpenBet was very manual and knowing what the industry has as standard for CI/CD now and applying it to OpenBet would add so much value to the entire process, added more consistency and resiliency, reduced cost for the clients and allowed the team to concentrate on more interesting work. </p>
-            </div>
-
-
             <div class="ui raised very padded text container segment">
                 <div class="ui two column grid">
                     <div class="column">
@@ -894,7 +834,7 @@
                     <h4 class="ui blue header">Action:</h4>
                     <h4 class="ui green header">Results:</h4>
                 <p>How do you make culture and attitude change at a department level? </p>
-                <p>A few years ago we started this process in the department I was in. It was an old school mentality department with more of a waterfall non agile mindset by the people running it and also from the developers on the ground. Releases were 'Big Bang' project releases every quarter (at best), which had major months long test phases running up to them. Small but important changes or simple bug fixes got held up and had to wait on the release train. A lot of the time these changes not only didn't make it into the next release but the release after that, as code was locked down for this rigorous manually testing phase. Even still most releases had serious bugs in them. Multiple major branches had to be maintained and merging was big ordeal because of all this causing more bugs as this happened after all the testing on the project branch.</p>
+                <p>A few years ago we started this process in the department I was in. It was an old school mentality department with more of a waterfall non agile mind-set by the people running it and also from the developers on the ground. Releases were 'Big Bang' project releases every quarter (at best), which had major months long test phases running up to them. Small but important changes or simple bug fixes got held up and had to wait on the release train. A lot of the time these changes not only didn't make it into the next release but the release after that, as code was locked down for this rigorous manually testing phase. Even still most releases had serious bugs in them. Multiple major branches had to be maintained and merging was big ordeal because of all this causing more bugs as this happened after all the testing on the project branch.</p>
                 <p>Work was siloed and the development teams only cared about the project they were working on. A dedicated support team managed support of the production system. The did lots of fire fighting and quenched lots of fires. It was a bit of a hero mentality. Because of the silo the development team weren't involved in investigating root cause for these production issues, most of them didn't even have access to production. Because of this environment developers never learned from these prod incidents and instead of engineering an application to avoid pitfalls learned from previous experiences or issues the same basic issues cropped up over and over again. A simple example of this was that data changes would constantly be applied on production rather than fixing </p>
                 <p><ul>
                 <li> Siloed work between dev and support</li>
