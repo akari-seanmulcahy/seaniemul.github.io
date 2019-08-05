@@ -50,19 +50,21 @@
                             <a class="item" href="#career">Career progression matrix</a>
                             <a class="item" href="#managin">Managin' ain't easy!</a>
                             <a class="item" href="#turning">Turning a team around</a>
-                            <a class="item" href="#overwhelming">Technology can be overwhelming</a>
+                            <a class="item" href="#stale">Becoming Stale Technology-wise</a>
                             <a class="item" href="#semantic-ui">Semantic UI</a>
+                            <a class="item" href="#overwhelming">Technology can be overwhelming</a>
                             <a class="item" href="#visualising">Visualising Software Architecture</a>
                         </div>
                     </div>
                 </div>
 
+                <a id="career"></a>
                 <div class="ui two column grid">
                     <div class="column">
-                        <h2 class="ui header"><a id="career"></a>Career progression matrix</h2>
+                        <h2 class="ui header">Career progression matrix</h2>
                     </div>
                     <div class="column">
-                        <a class="ui blue right ribbon label">July 2019</a>
+                        <a class="ui blue right ribbon label">August 2019</a>
                     </div>
                 </div>
                 <p></p>
@@ -81,16 +83,26 @@
                 From this you can see what you would need to do 'follow' or 'drive/lead' in that competency.
                 </p>
                 <p>As well as being good to help assess promotions this is great to help set objectives for a developer. A developer can use the matrix to self-assess where they think they are at. They can build up some evidence to demonstrate where they have met the criteria for certain levels and also can see what criteria they meet in others.</p>
+                <div class="extra">
+                    <div class="ui blue label">Competencies</div>
+                    <div class="ui blue label">Levels</div>
+                    <div class="ui blue label">Developer</div>
+                    <div class="ui blue label">Roles</div>
+                    <div class="ui blue label">Engineering</div>
+                    <div class="ui blue label">Customer</div>
+                    <div class="ui blue label">People Culture</div>
+                </div>
             </div>
 
 
             <div class="ui raised very padded text container segment">
+                <a id="managin"></a>
                 <div class="ui two column grid">
                     <div class="column">
-                        <h2 class="ui header"><a id="managin"></a>Managin' ain't easy!</h2>
+                        <h2 class="ui header">Managin' ain't easy!</h2>
                     </div>
                     <div class="column">
-                        <a class="ui right ribbon yellow label">June 2019</a>
+                        <a class="ui right ribbon yellow label">July 2019</a>
                     </div>
                 </div>
 
@@ -150,25 +162,26 @@
                     <p></p>
                 </div>
                 <div class="extra">
-                    <div class="ui label">Delegation</div>
-                    <div class="ui label">Managing Managers</div>
-                    <div class="ui label">Culture</div>
-                    <div class="ui label">Future Proofing the team</div>
-                    <div class="ui label">Clear Direction</div>
-                    <div class="ui label">Balanced Team</div>
-                    <div class="ui label">Appraisals</div>
-                    <div class="ui label">Line Management</div>
+                    <div class="ui yellow label">Delegation</div>
+                    <div class="ui yellow label">Managing Managers</div>
+                    <div class="ui yellow label">Culture</div>
+                    <div class="ui yellow label">Future Proofing the team</div>
+                    <div class="ui yellow label">Clear Direction</div>
+                    <div class="ui yellow label">Balanced Team</div>
+                    <div class="ui yellow label">Appraisals</div>
+                    <div class="ui yellow label">Line Management</div>
                 </div>
             </div>
 
 
             <div class="ui raised very padded text container segment">
+                <a id="turning"></a>
                 <div class="ui two column grid">
                     <div class="column">
-                        <h2 class="ui header"><a id="turning"></a>Turning a team around</h2>
+                        <h2 class="ui header">Turning a team around</h2>
                     </div>
                     <div class="column">
-                        <a class="ui right ribbon label">May 2019</a>
+                        <a class="ui right ribbon label">June 2019</a>
                     </div>
                 </div>
                 <p></p>
@@ -279,12 +292,112 @@
 
 
             <div class="ui raised very padded text container segment">
+                <a id="stale"></a>
                 <div class="ui two column grid">
                     <div class="column">
-                        <h2 class="ui header"><a id="overwhelming"></a>Technology can be overwhelming</h2>
+                        <h2 class="ui header">Becoming Stale Technology-wise</h2>
                     </div>
                     <div class="column">
-                        <a class="ui red right ribbon label">April 2019</a>
+                        <a class="ui purple right ribbon label">May 2019</a>
+                    </div>
+                </div>
+                <p></p>
+                <p> My first job was as a developer at a great company - OpenBet. We were full stack developers doing devops as well as coding, this was before devops and full stack became the norm. We were a small company with the primary language being TCL. Because it was such a niche language not many people from the industry had it. The hiring policy was to hire very clever people who were problem solvers rather than focussing on experience in a particular language. Most of the employees started from university and trained up in it.</p>
+                <p> This meant we ended up with a very smart workforce who picked up TCL quite easily along with SQL and front-end HTML, CSS and JS. Database performance was a key consideration. We built extremely performant websites built to handle peak loads of over 10000 bets per min on our client's busiest day of the year - Grand National day.
+                </p>
+
+                <p>Here is a view of the OpenBet products and applications: <img class="ui fluid image" src="./static/images/blog/openbet/OpenBetProducts.png">
+                </p>
+                <p></p>
+                <p>And a view of the architecture & http request/response flow:</p><p></p> <img class="ui fluid image" src="./static/images/blog/openbet/ob_arch.png"></p>
+                <p></p>
+                <p> So, as you can see OpenBet did some pretty cool stuff and was the dominant player in the industry for creating sportsbooks. But a big drawback was the company stuck with the same tools and technologies it always used and very rarely adopted some of the new technologies that emerged.</p>
+                <p>We kept reinventing the wheel when we could have used off the shelf open source products that had already been built and had solved the common problems and already overcome all the teething issues that arose with building something from scratch.</p>
+
+                <p>Looking back, some examples would have been:
+                    <div role="list" class="ui bulleted list achievements">
+                        <div role="listitem" class="item">Creating a caching data layer (called SiteServer) rather than using something like Memcahced or other open source solutions that now exist like Redis etc.</div>
+                        <div role="listitem" class="item">Adopting CI/CD</div>
+                        <div role="listitem" class="item">Investing in Mobile friendly front ends.</div>
+                        <div role="listitem" class="item">Having key products as a service rather than bespoke development for every customer</div>
+                    </div>
+                </p>
+                <p>For example, a proper CI/CD pipeline would have been a massive area for improvement. The process at OpenBet was very manual and knowing now what the industry has as standard for CI/CD (and all the types of automated tests that go with it) and applying it to OpenBet would add so much value to the entire process, added more consistency and resiliency, made the teams more efficient and reduced cost for the clients and allowed the team to concentrate on more interesting work.</p>
+
+                <p>These are just some of the examples. It led to the company becoming stale and losing its ground as the market leader and projects taking longer to develop than they could have. Clients started to create their own in-house software teams and started on creating the front-end themselves and eventually started taking on more of the back-end functionality also.</p>
+                <p>But for the developers in the company it meant that nothing new from a technology standpoint was learned. Because we were a ‘Time & Materials’ company we didn’t get given the time for experimentation/learning/R&D and had to focus on billable hours. People got bored of doing the same thing over and over. Some people left, some people progressed their skills by moving into more managerial positions (like me). But on the whole people did not progress their breadth of technology tools while there.</p>
+
+                <p>This situation may sound bizarre given where the IT industry is now at in terms of the ever-changing landscape and new technologies emerging constantly, with developers and companies adopting them regularly.</p>
+
+                <h4> Why didn't the engineers in the company force the change to adopt new technologies?</h4>
+
+                <p>There were probably a lot of factors that played into this but I think the biggest one was 'culture'. Although the engineers were very clever people, it simply wasn't part of the mind-set to explore new technologies. </p>
+                <p>The senior engineers in the company had solved some complex problems like reducing the time taken for a complex bet placement transaction down to seconds in length, had become one of the key contributors to improving and suggesting changes to the IBM Informix Database and had designed some great Sports Betting back end products. But they were slow to investigate and adopt new technologies and as they were the people the more junior engineers looked up to, it never became the norm to do this or have this attitude, this therefore was not part of the company culture.</p>
+                <p> A big part of this was the company was quite insular. There was never an injection of new blood, in particular of experienced senior engineers to help highlight this issue and help shift the culture to become more like the industry norms. Also, the company leadership were more sales focussed and not engineering focussed. The focus was on 'time and materials' and billing the clients rather than allowing time for 'R&D' or simply improving things on the engineering front.</p>
+                <p>So, although there was a great culture of:
+                    <ul>
+                        <li>Excellent work ethic</li>
+                        <li>Delivering an awful lot</li>
+                        <li>Solving complex problems</li>
+                        <li>Building up good client relationships by interacting and working directly with the clients</li>
+                        <li>Taking on line management and managerial responsibilities early in their careers</li>
+                        <li>Getting lots of experience and exposure early in their careers</li>
+                    </ul>
+                    It feels like an opportunity lost, given how good the workforce was, if we had the knowledge/exposure of the current industry norms in terms of ways of working and applied it back then, the company could have remained at the forefront of the industry and continued to be a place that engineers were passionate about working for.
+                </p>
+                <p>Having moved to Sky and seeing a different culture, and with the ways of working being more mature and good practices being the norm it was a real eye opener for me. It made me wish I had changed company a bit sooner or if we had a bigger injection of external technical leadership sooner. Also, the era we are now in, you learn good practices in university, there is more of an expectation on people to self-learn themselves by attending meet ups, conferences and lots of online tools/resources and communities. As well as this, people in London change companies so often that ideas and ways of workings are exchanged constantly.</p>
+                <p>I think in summary it shows how as a company you can't rest on your laurels, you constantly have to improve and challenge how you are working and have to evolve and make sure you get fresh ideas and people in to challenge your norms. Also, I think given the current climate in IT, it's a lot harder to become stale technology-wise now, as either engineers individually or companies as a whole. </p>
+                <div class="extra">
+                    <div class="ui purple label">Culture</div>
+                    <div class="ui purple label">Ways of working</div>
+                    <div class="ui purple label">CI/CD</div>
+                    <div class="ui purple label">Challenge the norms</div>
+                </div>
+            </div>
+
+
+            <div class="ui raised very padded text container segment">
+                <a id="semantic-ui"></a>
+                <div class="ui two column grid">
+                    <div class="column">
+                        <h2 class="ui header">Semantic UI</h2>
+                    </div>
+                    <div class="column">
+                        <a class="ui orange right ribbon label">April 2019</a>
+                    </div>
+                </div>
+                <p></p>
+                <p>Today I explored Semantic UI. Following on from the previous post, it’s exactly the type of thing I had been looking for. A nice boot strapped CSS with a simple consistent and clean look and feel to it out of the box.
+                <p>Importantly it has really good <a href="https://semantic-ui.com/introduction/getting-started.html">documentation with sample usage</a>. To start off you simply need to include the relevant semantic CSS and JS files into your page. There is some JQuery code you can use as well to bring the CSS attributes to life via JS to show how to use them. </p>
+                <p>A 60 min intro tutorial on <a href="ttps://www.youtube.com/watch?v=a9mUH1EWp40">YouTube</a></p>
+                <p> To run you’d need to:
+                    <div role="list" class="ui bulleted list achievements">
+                        <div role="listitem" class="item">Npm to install semantic UI</div>
+                        <div role="listitem" class="item">Gulp to  build and compile code to create local semantic CSS and JS files</div>
+                    </div>
+                </p>
+                <p>In the demo, he sourced versions of these files from cloud CDNs and then later he built the compiled code later to create the local files. </p>
+                <p>Once you install semantic, then you can overwrite the default themes if you wish for certain attributes. It looks good on a mobile also.</p>
+                <p>I will now be using it on this site, you'll be able to see for yourself the results!</p>
+
+                <div class="extra">
+                    <div class="ui orange label">Semantic UI</div>
+                    <div class="ui orange label">CSS</div>
+                    <div class="ui orange label">JS</div>
+                    <div class="ui orange label">NPM</div>
+                    <div class="ui orange label">Gulp</div>
+                </div>
+            </div>
+
+
+            <div class="ui raised very padded text container segment">
+                <a id="overwhelming"></a>
+                <div class="ui two column grid">
+                    <div class="column">
+                        <h2 class="ui header">Technology can be overwhelming</h2>
+                    </div>
+                    <div class="column">
+                        <a class="ui black right ribbon label">March 2019</a>
                     </div>
                 </div>
                 <p></p>
@@ -310,52 +423,19 @@
                 Rather than jumping straight into a JavaScript framework and hooking it up to a DB, let’s start with building a static website. Doing this will help get back into simple HTML, CSS and some JS as well as getting used to GIT as version control (I used CVS). Once that is done we can expand into something more elaborate. So that's the plan. Let's see how it works out ...
                 </p>
                 <div class="extra">
-                    <div class="ui label">JS Frameworks</div>
-                    <div class="ui label">Languages</div>
-                    <div class="ui label">Technologies</div>
-                    <div class="ui label">CVS</div>
+                    <div class="ui black label">JS Frameworks</div>
+                    <div class="ui black label">Languages</div>
+                    <div class="ui black label">Technologies</div>
+                    <div class="ui black label">CVS</div>
                 </div>
             </div>
 
 
             <div class="ui raised very padded text container segment">
-                <div class="ui two column grid">
-                    <div class="column">
-                        <h2 class="ui header"><a id="semantic-ui"></a>Semantic UI</h2>
-                    </div>
-                    <div class="column">
-                        <a class="ui yellow right ribbon label">April 2019</a>
-                    </div>
-                </div>
-                <p></p>
-                <p>Today I explored Semantic UI. It’s exactly the type of thing I had been looking for. A nice boot strapped CSS with a simple consistent and clean look and feel to it out of the box.
-                <p>Importantly it has really good <a href="https://semantic-ui.com/introduction/getting-started.html">documentation with sample usage</a>. To start off you simply need to include the relevant semantic CSS and JS files into your page. There is some JQuery code you can use as well to bring the CSS attributes to life via JS to show how to use them. </p>
-                <p>A 60 min intro tutorial on <a href="ttps://www.youtube.com/watch?v=a9mUH1EWp40">YouTube</a></p>
-                <p> To run you’d need to:
-                    <div role="list" class="ui bulleted list achievements">
-                        <div role="listitem" class="item">Npm to install semantic UI</div>
-                        <div role="listitem" class="item">Gulp to  build and compile code to create local semantic CSS and JS files</div>
-                    </div>
-                </p>
-                <p>In the demo, he sourced versions of these files from cloud CDNs and then later he built the compiled code later to create the local files. </p>
-                <p>Once you install semantic, then you can overwrite the default themes if you wish for certain attributes. It looks good on a mobile also.</p>
-                <p>I will now be using it on this site, you'll be able to see for yourself the results!</p>
-
-                <div class="extra">
-                    <div class="ui label">Semantic UI</div>
-                    <div class="ui label">CSS</div>
-                    <div class="ui label">JS</div>
-                    <div class="ui label">NPM</div>
-                    <div class="ui label">Gulp</div>
-                </div>
-            </div>
-
-
-            <div class="ui raised very padded text container segment">
-
+                <a id="visualising"></a>
                 <div class="ui grid">
                     <div class="fourteen wide column">
-                        <h2 class="ui header"><a id="visualising"></a>Visualising Software Architecture</h2>
+                        <h2 class="ui header">Visualising Software Architecture</h2>
                     </div>
                     <div class="two wide column">
                         <a class="ui black right ribbon label">Sept 2018</a>
@@ -442,7 +522,10 @@
                 </div>
                 <div class="extra">
                     <p></p>
-                    <div class="ui red label">C4</div>
+                    <div class="ui black label">C4</div>
+                    <div class="ui black label">Consistent diagrams</div>
+                    <div class="ui black label">Highlighting architectural changes</div>
+                    <div class="ui black label">Refactoring</div>
                 </div>
             </div>
 
